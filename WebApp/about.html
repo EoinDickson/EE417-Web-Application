@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascript/site.js"></script>
+
+    <title>Eoin's Gallary</title>
+    <a class="logo" href="index.html"><img src="imgs/Eoin's.png" alt="Eoin's Gallery Logo" href="index.html"></a>
+
+    <div class="navbar">
+        <a onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <!-- <a href="gallery.html">Gallery</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <div class="dropdown">
+            <button class="dropbtn">Info
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="right-nav">
+            <a href="profile.html"><i class="fa fa-user"></i></a>
+            <a href="login.html">Login / Logout</a>
+        </div> -->
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <div class="dropdown">
+            <a class="dropbtn" onmouseover="overDropdown(this)" onmouseout="outDropdown(this)">Info
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content" id="dropdown-content" onmouseover="overDropdown(this)" onmouseout="outDropdown(this)">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <hr>
+            <a href="profile.html"><i class="fa fa-user"></i></a>
+            <a href="login.html">Login / Logout</a>
+        </div>
+      </div>
+</head>
+
+<body>
+    <div class="about">
+        <div class="content">
+            <h1>About Us</h1>
+            <img src="imgs/team.jpeg" alt="team photo">
+            <p>
+                Welcome to our photo sharing platform! Our website allows users to explore a world of photographs and
+                connect with photographers from all around the globe. You can sign up for an account to like, discover,
+                and download your favorite photos. Our mission is to provide a space for photographers to showcase their
+                work and for users to find and appreciate new and exciting photography. Whether you're a professional
+                photographer or just someone who loves taking pictures, our platform is the perfect place to share your
+                passion for photography. So why not join us today and start discovering the beauty of photography!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+            <ul>
+                <li>Address: 123 Main Street, Anytown USA 12345</li>
+                <li>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></li>
+                <li>Email: <a href="mailto:info@eoinsgallery.com">info@eoinsgallery.com</a></li>
+                <li>Business Hours: Monday - Friday, 9am - 5pm</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=Dublin%20City%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"></iframe>
+        </div>
+
+        </div>
+    </footer>
+
+
+</body>

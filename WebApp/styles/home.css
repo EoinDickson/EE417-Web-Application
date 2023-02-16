@@ -1,0 +1,14 @@
+/* Center the title */
+.home-content h1{
+    text-align: center;
+}
+/* Make banner fullscreen */
+.banner-area img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.home-content{
+    margin: 5% 10%;
+    padding-bottom: 10px;
+}

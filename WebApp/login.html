@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+
+    <title>Eoin's Gallary</title>
+
+    <a class="logo" href="index.html"><img src="imgs/Eoin's.png" alt="Eoin's Gallery Logo" href="index.html"></a>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <div class="dropdown">
+            <button class="dropbtn">Info
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="right-nav">
+            <a href="profile.html"><i class="fa fa-user"></i></a>
+            <a href="login.html">Login / Logout</a>
+        </div>
+    </div>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Login Page</h2>
+    <div class="login">
+        <form action="action_page.php" method="post">
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+
+            </div>
+        </form>
+    </div>
+
+    <h2 style="text-align: center;">Sign up </h2>
+    <div class="register">
+        <form name="register" id="register">
+            <div class="container">
+                <div class="input-control">
+
+                <label for="username"><b>Username</b></label>
+                <input id="username" type="text" placeholder="Username" name="username" >
+                <div class="error"></div>
+                </div>
+                <label for="firstName"><b>First Name</b></label>
+                <input id="firstName" type="text" placeholder="First Name" name="firstName" >
+                <div class="error"></div>
+
+
+                <label for="secondName"><b>Second Name</b></label>
+                <input id="secondName" type="text" placeholder="Second Name" name="secondName" >
+
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="email" placeholder="someone@example.com" name="email" >
+
+                <label for="phone">Enter your phone number:</label>
+                <input id="phone" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+
+                <label for="dob"><b>Date of Birth</b></label>
+                <input id="dob" type="date" name="dob" >
+
+                <label for="gender"><b>Gender</b></label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="NA">Rather not say</option>
+                </select>
+
+                <label for="address1"><b>Address line 1</b></label>
+                <input id="address1" type="text" placeholder="Address line 1" name="address1" >
+
+                <label for="address2"><b>Address line 2</b></label>
+                <input id="address2" type="text" placeholder="Address line 2" name="address2" >
+
+                <label for="country"><b>Country</b></label>
+                <input id="country" type="text" placeholder="Country" name="country" >
+
+                <label for="password"><b>Password</b></label>
+                <input id="password" type="text" placeholder="Passowrd" name="password" >
+
+                <label for="confirmPassword"><b>Confirm Password</b></label>
+                <input id="confirmPassword" type="text" placeholder="Confirm Password" name="confirmPassword" >
+
+                <button type="submit">Login</button>
+
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="info">
+            <ul>
+                <li>Address: 123 Main Street, Anytown USA 12345</li>
+                <li>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></li>
+                <li>Email: <a href="mailto:info@eoinsgallery.com">info@eoinsgallery.com</a></li>
+                <li>Business Hours: Monday - Friday, 9am - 5pm</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=Dublin%20City%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"></iframe>
+        </div>
+
+        </div>
+    </footer>
+    <script src="./javascript/login.js"></script>
+
+</body>
+
+
+</html>
