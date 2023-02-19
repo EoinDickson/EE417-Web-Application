@@ -7,28 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <script src="./javascript/site.js"></script>
 
     <title>Eoin's Gallary</title>
 
     <a class="logo" href="index.html"><img src="imgs/Eoin's.png" alt="Eoin's Gallery Logo" href="index.html"></a>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="leaderboard.html">Leaderboard</a>
-        <div class="dropdown">
-            <button class="dropbtn">Info
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="right-nav">
-            <a href="profile.html"><i class="fa fa-user"></i></a>
-            <a href="login.html">Login / Logout</a>
-        </div>
+        <a onclick="openNav()"><i class="fa fa-bars"></i></a>
     </div>
+    <div id="nav"></div>
+
 </head>
 
 <body>
@@ -58,17 +46,67 @@
             <h2 style="text-align: center;">
                 Contact Form
             </h2>
-            <form>
-                <label for="email">Email Address:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="subject">Subject</label><br>
-                <input type="text" id="subject" name="subject"><br>
-                <label for="content">Content</label><br>
-                <textarea type="text" id="content" name="content" rows="10"></textarea><br>
-                <input type="checkbox" id="terms_conditions" name="terms_conditions" value="terms_conditions">
-                <label for="terms_conditions"> Do you agree to Eoin's Gallery terms and conditions/GDPR</label><br>
-                <input type="submit" value="Submit">
+            <form id="contact_form">
+                <div class="input">
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName" onfocus="setSuggestion(this,'John')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="secondName">Second Name:</label><br>
+                    <input type="text" id="secondName" name="secondName" onfocus="setSuggestion(this,'Murphy')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" name="email" onfocus="setSuggestion(this,'Johnmurphy@gmail.com')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" onfocus="setSuggestion(this,'0861234567')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="ref">Reference number:</label><br>
+                    <input type="number" id="ref" name="ref"  onfocus="setSuggestion(this,'1234567')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" onfocus="setSuggestion(this,'Uploading issue')" onblur="resetSuggestion(this)"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="message">Message:</label><br>
+                    <textarea type="text" id="message" name="message"></textarea><br>
+                    <!-- <input type="text" id="message" name="message"><br> -->
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="terms">Terms and conditions:</label><br>
+                    <input type="checkbox" id="terms" name="terms"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="mailing">Add me to mailing list:</label><br>
+                    <input type="checkbox" id="mailing" name="mailing"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input">
+                    <label for="contact"><b>Prefered method of contact:</b></label>
+                    <select id="contact" name="contact">
+                        <option value="Phone">Phone</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </div>
+
+                <button type="submit" onclick="clear()">Submit</button>
             </form>
+        </div>
+        <button onclick="contactTable()">Show table</button>
+
+        <div id="contactTable">
         </div>
     </div>
     <footer>
@@ -88,3 +126,4 @@
         </div>
     </footer>
 </body>
+<script src="./javascript/contact.js"></script>

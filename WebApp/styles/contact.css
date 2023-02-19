@@ -22,6 +22,8 @@
 }
 
 input[type=text],
+input[type=tel],
+input[type=number],
 select {
     width: 100%;
     padding: 12px 20px;
@@ -41,7 +43,7 @@ textarea[type=text] {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+button{
     width: 100%;
     background-color: #5cb5de;
     color: white;
@@ -73,3 +75,39 @@ input[type=submit]:hover {
     width: 80%;
     height: 100%;
 }
+.error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+.suggestion {
+  color: #12832b;
+  font-size: 12px;
+  height: 13px;
+}
+.loginTable{
+    min-height: 400px;
+  }
+  
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5482c6;
+    color: white;
+  }
+  
